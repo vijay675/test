@@ -35,7 +35,8 @@ jobs:
           script: |
             DEPLOY_TAG="${{ env.DEPLOY_TAG }}"
             set -euxo pipefail
-            cd /home/ubuntu/test
+            cd /home/ubuntu/
+            cd test
         
 
             git fetch --all --tags --prune
